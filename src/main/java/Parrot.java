@@ -1,6 +1,3 @@
-import perform.impl.DuckFly;
-import perform.impl.DuckSwim;
-
 public class Parrot extends Bird {
 
   public Parrot(Animal neighbourAnimal) {

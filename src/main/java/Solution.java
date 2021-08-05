@@ -1,6 +1,5 @@
 import perform.impl.CatSound;
 import perform.impl.DogSound;
-import perform.impl.RoosterSound;
 
 public class Solution {
 
@@ -33,6 +32,9 @@ public class Solution {
 
     Parrot parrotLivingWithRooster = new Parrot(rooster);
     System.out.println(parrotLivingWithRooster.performSound());
+
+    Fish fish = new Fish();
+    System.out.println(fish.performSwim());
 
   }
 }
