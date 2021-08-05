@@ -1,4 +1,4 @@
-
+import perform.impl.RoosterSound;
 
 public class Solution {
 
@@ -14,6 +14,9 @@ public class Solution {
     chicken.performFly();
     System.out.println(chicken.performSwim());
 
+    Chicken rooster = new Chicken();
+    rooster.setIsRooster();
+    System.out.println(rooster.performSound());
 
   }
 }

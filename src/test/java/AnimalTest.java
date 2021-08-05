@@ -1,5 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
+import perform.impl.RoosterSound;
 
 
 public class AnimalTest {
@@ -42,6 +43,13 @@ public class AnimalTest {
   public void testChickenSound(){
     Chicken chicken = new Chicken();
     System.out.println(chicken.performSound());
+  }
+
+  @Test
+  public void testRoosterSound(){
+    Chicken rooster = new Chicken();
+    rooster.setIsRooster();
+    System.out.println(rooster.performSound());
   }
 
 }
