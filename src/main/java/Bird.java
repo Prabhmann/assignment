@@ -1,24 +1,18 @@
 
 import perform.FlyableI;
 import perform.SingableI;
-import perform.SoundI;
+
 import perform.SwimI;
 
 class Bird extends Animal implements SingableI {
 
-  public SoundI soundBehaviour;
+  protected FlyableI flyBehaviour;
 
-  public FlyableI flyBehaviour;
-
-  public SwimI swimBehaviour;
+  protected SwimI swimBehaviour;
 
   @Override
-  public void sing() {
-    System.out.println("I am singing");
-  }
-
-  public String performSound(){
-    return soundBehaviour.sound();
+  public String sing() {
+    return "I am singing";
   }
 
   public String performSwim(){

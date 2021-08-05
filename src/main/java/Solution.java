@@ -1,3 +1,5 @@
+import perform.impl.CatSound;
+import perform.impl.DogSound;
 import perform.impl.RoosterSound;
 
 public class Solution {
@@ -16,7 +18,21 @@ public class Solution {
 
     Chicken rooster = new Chicken();
     rooster.setIsRooster();
-    System.out.println(rooster.performSound());
+
+    Animal dog = new Animal();
+    dog.setSoundBehaviour(new DogSound());
+
+    Animal cat = new Animal();
+    cat.setSoundBehaviour(new CatSound());
+
+    Parrot parrotLivingWithDog = new Parrot(dog);
+    System.out.println(parrotLivingWithDog.performSound());
+
+    Parrot parrotLivingWithCat = new Parrot(cat);
+    System.out.println(parrotLivingWithCat.performSound());
+
+    Parrot parrotLivingWithRooster = new Parrot(rooster);
+    System.out.println(parrotLivingWithRooster.performSound());
 
   }
 }
