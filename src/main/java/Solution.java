@@ -36,5 +36,11 @@ public class Solution {
     Fish fish = new Fish();
     System.out.println(fish.performSwim());
 
+    ClownFish clownFish = new ClownFish();
+    System.out.println(clownFish.tellMeAJoke());
+
+    Shark shark = new Shark();
+    System.out.println(shark.eat(shark));
+
   }
 }

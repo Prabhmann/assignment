@@ -75,4 +75,16 @@ public class AnimalTest {
     Assert.assertEquals(DOG_SOUND, parrotLivingWithDog.performSound());
   }
 
+  @Test
+  public void testSharkEatShark() {
+    Shark shark = new Shark();
+    Assert.assertEquals(shark.eat(shark), "Shark cannot eat shark");
+  }
+
+
+  @Test
+  public void testClownFishTellJoke() {
+    ClownFish clownFish = new ClownFish();
+    Assert.assertEquals(clownFish.tellMeAJoke(), "Knock Knock");
+  }
 }
