@@ -2,6 +2,6 @@ package perform;
 
 public interface FlyableI {
 
-  public void fly() ;
+  Boolean fly();
 
 }

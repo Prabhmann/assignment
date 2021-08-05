@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AnimalTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-05T13:55:27" hostname="ip-192-168-18-6.ap-southeast-1.compute.internal" time="0.005">
+<testsuite name="AnimalTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-08-05T15:01:43" hostname="ip-192-168-18-6.ap-southeast-1.compute.internal" time="0.016">
   <properties/>
-  <testcase name="testBirdSing" classname="AnimalTest" time="0.005"/>
+  <testcase name="testDuckSound" classname="AnimalTest" time="0.007"/>
+  <testcase name="testChickenSound" classname="AnimalTest" time="0.002"/>
+  <testcase name="testChickenFly" classname="AnimalTest" time="0.0"/>
+  <testcase name="testDuckFly" classname="AnimalTest" time="0.001"/>
+  <testcase name="testBirdSing" classname="AnimalTest" time="0.003"/>
   <testcase name="testBirdWalk" classname="AnimalTest" time="0.0"/>
-  <system-out><![CDATA[I am singing
+  <system-out><![CDATA[Quack Quack
+Cluck, cluck
+I can't fly
+I can fly
+I am singing
 I am walking
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
