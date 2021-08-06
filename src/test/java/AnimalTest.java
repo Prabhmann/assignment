@@ -6,7 +6,7 @@ import perform.impl.RoosterSound;
 
 public class AnimalTest {
 
-   final String ANIMAL_WALKING = "I am walking";
+   final String ANIMAL_WALKING = "I can walk";
 
    final String BIRD_SINGING = "I am singing";
 
