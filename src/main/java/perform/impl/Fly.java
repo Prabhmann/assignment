@@ -2,7 +2,7 @@ package perform.impl;
 
 import perform.FlyableI;
 
-public class DuckFly  implements FlyableI {
+public class Fly implements FlyableI {
 
   @Override
   public Boolean fly() {

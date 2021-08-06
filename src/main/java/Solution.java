@@ -46,5 +46,13 @@ public class Solution {
     Dolphin dolphin = new Dolphin();
     System.out.println(dolphin.performSwim());
 
+
+    Catterpillar catterpillar = new Catterpillar();
+    Boolean fly = catterpillar.performFly();
+    System.out.println(catterpillar.walk());
+    System.out.println(catterpillar.performSwim());
+
+    catterpillar.evolveToButterfly();
+    catterpillar.performFly();
   }
 }

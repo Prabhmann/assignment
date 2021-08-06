@@ -87,4 +87,14 @@ public class AnimalTest {
     ClownFish clownFish = new ClownFish();
     Assert.assertEquals(clownFish.tellMeAJoke(), "Knock Knock");
   }
+
+  @Test
+  public void testCatterPillarEvolve(){
+    Catterpillar catterpillar = new Catterpillar();
+    Boolean fly = catterpillar.performFly();
+    Assert.assertFalse(fly);
+    catterpillar.evolveToButterfly();
+    fly = catterpillar.performFly();
+    Assert.assertTrue(fly);
+  }
 }

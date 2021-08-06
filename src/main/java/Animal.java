@@ -1,13 +1,19 @@
 import perform.SoundI;
 import perform.SwimI;
 import perform.WalkI;
+import perform.impl.Walk;
 
-public class Animal implements WalkI {
+public class Animal {
 
   public SoundI soundBehaviour;
 
   protected SwimI swimBehaviour;
 
+  protected WalkI walkBehaviour;
+
+  public Animal(){
+    this.walkBehaviour = new Walk();
+  }
   public String performSwim(){
     return swimBehaviour.swim();
   }
@@ -24,8 +30,7 @@ public class Animal implements WalkI {
     this.soundBehaviour = soundBehaviour;
   }
 
-  @Override
   public String walk() {
-    return "I am walking";
+    return this.walkBehaviour.walk();
   }
 }
