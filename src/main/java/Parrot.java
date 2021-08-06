@@ -11,6 +11,6 @@ public class Parrot extends Bird {
 
   @Override
   public Boolean performFly(){
-    return Boolean.FALSE;
+    return Boolean.TRUE;
   }
 }

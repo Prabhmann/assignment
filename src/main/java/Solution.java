@@ -5,6 +5,8 @@ public class Solution {
 
   public static void main(String[] args) {
 
+    Bird bird = new Bird();
+
     Duck duck = new Duck();
     System.out.println(duck.performSound());
     System.out.println(duck.performSwim());
@@ -54,5 +56,52 @@ public class Solution {
 
     catterpillar.evolveToButterfly();
     catterpillar.performFly();
+
+    Animal[] animals = new Animal[]{
+        bird,
+        duck,
+        chicken,
+        rooster,
+        parrotLivingWithCat,
+        fish,
+        shark,
+        clownFish,
+        dog,
+        catterpillar
+    };
+
+    Integer flyCount = 0;
+    Integer walkCount = 0;
+
+    Integer singCount = 0;
+
+    Integer swimCount = 0;
+
+    for(Animal animal: animals){
+      if(animal instanceof Bird){
+        Bird birdAnimal = (Bird) animal;
+        if(birdAnimal.performFly()){
+          flyCount++;
+        }
+        String sing = birdAnimal.sing();
+        if(sing.equals("I am singing")){
+           singCount++;
+        }
+      }
+      final String walk = animal.walk();
+      if(walk.equals("I can walk")){
+        walkCount++;
+      }
+
+      String swim = animal.performSwim();
+      if(swim.equals("I can swim")){
+        swimCount++;
+      }
+    }
+
+    System.out.println(flyCount+ " Can fly");
+    System.out.println(walkCount+ " Can walk");
+    System.out.println(singCount+ " Can sing");
+    System.out.println(swimCount+ " Can swim");
   }
 }

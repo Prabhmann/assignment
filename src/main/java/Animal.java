@@ -1,6 +1,7 @@
 import perform.SoundI;
 import perform.SwimI;
 import perform.WalkI;
+import perform.impl.NotSwim;
 import perform.impl.Walk;
 
 public class Animal {
@@ -13,6 +14,7 @@ public class Animal {
 
   public Animal(){
     this.walkBehaviour = new Walk();
+    this.swimBehaviour = new NotSwim();
   }
   public String performSwim(){
     return swimBehaviour.swim();
