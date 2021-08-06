@@ -42,5 +42,9 @@ public class Solution {
     Shark shark = new Shark();
     System.out.println(shark.eat(shark));
 
+
+    Dolphin dolphin = new Dolphin();
+    System.out.println(dolphin.performSwim());
+
   }
 }

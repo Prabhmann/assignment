@@ -44,4 +44,9 @@ public class Fish extends Animal {
     return "FISH SOUND";
   }
 
+  @Override
+  public String walk() {
+    return "I can't walk";
+  }
+
 }
